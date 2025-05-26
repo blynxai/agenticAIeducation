@@ -45,7 +45,7 @@ cd ~/projects
 
 Enter this in the terminal in the Projects folder:
 
-`git clone https://github.com/ed-donner/agents.git`
+`git clone https://github.com/blynxai/agenticaieducation.git`
 
 This creates a new directory `agents` within your Projects folder and downloads the code for the class. Do `cd agents` to go into it. This `agents` directory is known as the "project root directory".
 

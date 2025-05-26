@@ -42,19 +42,18 @@ cd ~/projects
 3. **Clone the repository:**
 
 Run the following command in your terminal:
-`git clone https://github.com/ed-donner/agents.git`
+`git clone https://github.com/blynxai/agenticaieducation.git`
 
 This creates a new directory `agents` within your Projects folder and downloads the course code. Use `cd agents` to enter the directory. This is your "project root directory."
 
 ### Part 2: Install Cursor
 
-A word about Cursor: it's a cool product, but it's not to everyone's liking. It can also have a habit of being flakey with the AI recommendations. As student Alireza points out, you can use VS Code (or any IDE) in its place if you prefer. Cursor itself is built from VS Code and everything on this course will work fine in either.
+A word about Cursor: it's a cool product, but it's not to everyone's liking. It can also have a habit of being flakey with the AI recommendations. You can use VS Code (or any IDE) in its place if you prefer. Cursor itself is built from VS Code and everything on this course will work fine in either.
 
 1. Visit cursor at https://www.cursor.com/
 2. Click Sign In on the top right, then Sign Up, to create your account
 3. Download and follow its instructions to install and open Cursor
-
-Some notes from a student (thank you Ernst!):  
+ 
 For Linux users the installation is not as straightforward, here are two resources that helped me install Cursor:  
 - https://forum.cursor.com/t/can-you-add-a-how-to-guide-on-installing-using-cursor-in-ubuntu/16646/2
 -> look for the video and watch the first four minutes.
@@ -86,7 +85,7 @@ Follow the instructions here to install uv - I recommend using the Standalone In
 https://docs.astral.sh/uv/getting-started/installation/
 
 Then within Cursor, select View >> Terminal, to see a Terminal window within Cursor.  
-Type `pwd` to see the current directory, and check you are in the 'agents' directory. For me it is `/Users/ed/projects/agents` and it should be something similar for you.
+Type `pwd` to see the current directory, and check you are in the 'agents' directory. For me it is `/Users/mike/projects/agents` and it should be something similar for you.
 
 Start by running `uv self update` to make sure you're on the latest version of uv.
 

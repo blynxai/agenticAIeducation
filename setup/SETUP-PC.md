@@ -53,14 +53,14 @@ cd C:\Users\YourUsername\projects
 
 Enter this in the command prompt in the Projects folder:
 
-`git clone https://github.com/ed-donner/agents.git`
+`git clone https://github.com/blynxai/agenticaieducation.git`
 
 This creates a new directory `agents` within your Projects folder and downloads the code for the class. Do `cd agents` to go into it. This `agents` directory is known as the "project root directory".
 
 
 ### Part 2: Install Cursor
 
-A word about Cursor: it's a cool product, but it's not to everyone's liking. It can also have a habit of being flakey with the AI recommendations. As student Alireza points out, you can use VS Code (or any IDE) in its place if you prefer. Cursor itself is built from VS Code and everything on this course will work fine in either.
+A word about Cursor: it's a cool product, but it's not to everyone's liking. It can also have a habit of being flakey with the AI recommendations. You can use VS Code (or any IDE) in its place if you prefer. Cursor itself is built from VS Code and everything on this course will work fine in either.
 
 1. Visit cursor at https://www.cursor.com/
 2. Click Sign In on the top right, then Sign Up, to create your account

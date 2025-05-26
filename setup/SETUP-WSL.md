@@ -33,7 +33,7 @@ It's important to appreciate the difference between your Windows home directory,
 2. After that completes, you need to type `exit` to leave WSL and return to the Powershell and then type `wsl` to return to Linux, in order that changes to PATH are picked up
 3. Now type `cd` to go to your Linux home directory. Check you're there with `pwd` and `ls`
 4. Now create a projects directory with `mkdir projects` then `cd projects` to go into it
-5. And, from within your new projects directory, clone the repo with `git clone https://github.com/ed-donner/agents.git`
+5. And, from within your new projects directory, clone the repo with `git clone https://github.com/blynxai/agenticaieducation.git`
 6. Now go into your new agents directory, your Project Root Directory, with `cd agents`
 7. And now run the all-powerful `uv sync`
 
