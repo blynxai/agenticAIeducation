@@ -9,7 +9,7 @@ Setting up a powerful environment to work at the forefront of AI can be challeng
 If you hit problems, please don't hesitate to reach out. Support is available to get you up and running quickly. There's nothing worse than feeling _stuck_. Message, email or connect on LinkedIn and assistance will be provided promptly!
 
 Email: mike@syncopy.ai  
-LinkedIn: https://www.linkedin.com/in/mnedelko//  
+LinkedIn: https://www.linkedin.com/in/mnedelko/  
 
 _If you're looking at this in Cursor, please right click on the filename in the Explorer on the left, and select "Open preview", to view the formatted version._
 
