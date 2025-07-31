@@ -11,8 +11,8 @@ I couldn't be more excited to welcome you! This is the start of your 6 week adve
 ### Before you begin
 
 I'm here to help you be most successful! Please do reach out if I can help, either in the platform or by emailing me direct (mike@syncopy.ai). It's always great to connect with people on LinkedIn to build up the community - you'll find me here:  
-https://www.linkedin.com/in/mnedelko//  
-And this is new to me, but I'm also trying out X/Twitter at [@edwarddonner](https://x.com/edwarddonner) - if you're on X, please show me how it's done 😂  
+https://www.linkedin.com/in/mnedelko/  
+ 
 
 ### The not-so-dreaded setup instructions
 
@@ -52,4 +52,4 @@ Be sure to monitor your API costs to ensure you are totally happy with any spend
 
 ### ABOVE ALL ELSE -
 
-Be sure to have fun with the course! You could not have picked a better time to be learning about Agentic AI. I hope you enjoy every single minute! And if you get stuck at any point - [contact me](https://www.linkedin.com/in/mnedelko//).
+Be sure to have fun with the course! You could not have picked a better time to be learning about Agentic AI. I hope you enjoy every single minute! And if you get stuck at any point - [contact me](https://www.linkedin.com/in/mnedelko/).

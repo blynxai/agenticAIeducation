@@ -9,7 +9,7 @@ Setting up a powerful environment to work at the forefront of AI is not as easy 
 If you hit problems, please don't hesitate to reach out. I am here to get you up and running quickly. There's nothing worse than feeling _stuck_. Message me, email me or LinkedIn message me and I will unstick you quickly!
 
 Email: mike@syncopy.ai  
-LinkedIn: https://www.linkedin.com/in/mnedelko//  
+LinkedIn: https://www.linkedin.com/in/mnedelko/  
 
 _If you're looking at this in Cursor, please right click on the filename in the Explorer on the left, and select "Open preview", to view the formatted version._
 
@@ -90,7 +90,9 @@ Follow the instructions here to install uv - I recommend using the Standalone In
 https://docs.astral.sh/uv/getting-started/installation/
 
 Then within Cursor, select View >> Terminal, to see a Terminal window within Cursor.  
-Type `pwd` to see the current directory, and check you are in the 'agents' directory - like `C:\Users\YourUsername\Documents\Projects\agents` or similar
+Type `pwd` to see the current directory, and check you are in the 'agents' directory - like `C:\Users\YourUsername\Documents\Projectsagenticaieducation` or similar
+
+-->__Restart your PC again__
 
 Start by running `uv self update` to make sure you're on the latest version of uv.
 
@@ -198,7 +200,7 @@ To get started in Cursor, check that you've installed the Python and Jupyter ext
 After you click "Select Kernel", if there is no option like `.venv (Python 3.12.9)` then please do the following:  
 1. From the File menu, choose Preferences >> VSCode Settings (NOTE: be sure to select `VSCode Settings` not `Cursor Settings`)  
 2. In the Settings search bar, type "venv"  
-3. In the field "Path to folder with a list of Virtual Environments" put the path to the project root, like C:\Users\username\projects\agents
+3. In the field "Path to folder with a list of Virtual Environments" put the path to the project root, like C:\Users\username\projectsagenticaieducation
 And then try again.
 
 If you have any problems, I've included a Guide called [troubleshooting.ipynb](troubleshooting.ipynb) to figure it out.
