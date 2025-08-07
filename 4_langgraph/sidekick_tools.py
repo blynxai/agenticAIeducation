@@ -22,7 +22,7 @@ async def playwright_tools():
     playwright = await async_playwright().start()
     browser = await playwright.chromium.launch(headless=False)
     toolkit = PlayWrightBrowserToolkit.from_browser(async_browser=browser)
-    return toolkit.get_tools(), browser, playwright
+    return toolkit.get_tools(), browser, playwright #we also return the browser and the playwright object itself
 
 
 def push(text: str):
@@ -31,11 +31,11 @@ def push(text: str):
     return "success"
 
 
-def get_file_tools():
+def get_file_tools(): #This is new, we are using the FileManagementToolkit from the langchain_community library
     toolkit = FileManagementToolkit(root_dir="sandbox")
     return toolkit.get_tools()
 
-
+#You can add more tools here
 async def other_tools():
     push_tool = Tool(name="send_push_notification", func=push, description="Use this tool when you want to send a push notification")
     file_tools = get_file_tools()
@@ -46,9 +46,12 @@ async def other_tools():
         description="Use this tool when you want to get the results of an online web search"
     )
 
+    #Wikipedia tool
     wikipedia = WikipediaAPIWrapper()
     wiki_tool = WikipediaQueryRun(api_wrapper=wikipedia)
 
+    #This gives our LLM the ability to run python code
+    ### BE CAREFUL WITH THIS TOOL, This is a powerful tool that is NOT SANDBOXED.
     python_repl = PythonREPLTool()
     
     return file_tools + [push_tool, tool_search, python_repl,  wiki_tool]

@@ -1,0 +1,554 @@
+[StateSnapshot(values={'messages': [HumanMessage(content='Hi there', additional_kwargs={}, response_metadata={}, id='85bf67d6-56cb-422f-8cda-b7c7d1fa7c8c'), AIMessage(content='Hello! How can I assist you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 10, 'prompt_tokens': 90, 'total_tokens': 100, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DOhIAwzV34hffL6GaACqJgQ944', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--85764765-9813-4c0c-8d36-f257b75a7d64-0', usage_metadata={'input_tokens': 90, 'output_tokens': 10, 'total_tokens': 100, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='My name is Mike', additional_kwargs={}, response_metadata={}, id='220154d4-1296-4692-b48d-f791378c064f'), AIMessage(content='Nice to meet you, Mike! How can I help you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 111, 'total_tokens': 126, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DTlKnTC3rtcyDYzr6weTtmmXXn', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--e53996bc-8eb9-49a6-a0d5-c0d83faed227-0', usage_metadata={'input_tokens': 111, 'output_tokens': 15, 'total_tokens': 126, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='What is my name?', additional_kwargs={}, response_metadata={}, id='92c2156c-1e06-4a01-8bb0-2ffbc515fcca'), AIMessage(content='Your name is Mike.', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 6, 'prompt_tokens': 138, 'total_tokens': 144, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DXH4Ww4RiPoMRQhkKb70fHgoiv', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--254d6224-1d06-41ad-a810-ad0576fee5a7-0', usage_metadata={'input_tokens': 138, 'output_tokens': 6, 'total_tokens': 144, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='Shout my name!@', additional_kwargs={}, response_metadata={}, id='ee7765b1-36b7-4008-9eb1-cf19492d5445'), AIMessage(content='', additional_kwargs={'tool_calls': [
+                    {'id': 'call_g7bfq5Z8zPsn8wVU3yCokir9', 'function': {'arguments': '{
+                                "__arg1": "MIKE!"
+                            }', 'name': 'send_push_notification'
+                        }, 'type': 'function'
+                    }
+                ], 'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 19, 'prompt_tokens': 157, 'total_tokens': 176, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DcdKwHk0OUtKTBaMTLdlzZetTr', 'service_tier': 'default', 'finish_reason': 'tool_calls', 'logprobs': None
+            }, id='run--a72b63e0-eb24-41ac-a500-8efa6d4ec098-0', tool_calls=[
+                {'name': 'send_push_notification', 'args': {'__arg1': 'MIKE!'
+                    }, 'id': 'call_g7bfq5Z8zPsn8wVU3yCokir9', 'type': 'tool_call'
+                }
+            ], usage_metadata={'input_tokens': 157, 'output_tokens': 19, 'total_tokens': 176, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), ToolMessage(content='null', name='send_push_notification', id='ca031144-7c05-45e2-a8ac-39163b9d08cc', tool_call_id='call_g7bfq5Z8zPsn8wVU3yCokir9'), AIMessage(content='MIKE! 🎉', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 6, 'prompt_tokens': 186, 'total_tokens': 192, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DeEGOW8m5drFJtALYeqPZM9C97', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--03dcfe68-4c14-4aa0-9140-4b5e489cf35f-0', usage_metadata={'input_tokens': 186, 'output_tokens': 6, 'total_tokens': 192, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            })
+        ]
+    }, next=(), config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f7-241a-6753-800c-1b10c0b35222'
+        }
+    }, metadata={'source': 'loop', 'writes': {'chatbot': {'messages': [AIMessage(content='MIKE! 🎉', additional_kwargs={'refusal': None
+                    }, response_metadata={'token_usage': {'completion_tokens': 6, 'prompt_tokens': 186, 'total_tokens': 192, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                            }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                            }
+                        }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DeEGOW8m5drFJtALYeqPZM9C97', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+                    }, id='run--03dcfe68-4c14-4aa0-9140-4b5e489cf35f-0', usage_metadata={'input_tokens': 186, 'output_tokens': 6, 'total_tokens': 192, 'input_token_details': {'audio': 0, 'cache_read': 0
+                        }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                        }
+                    })
+                ]
+            }
+        }, 'step': 12, 'parents': {}, 'thread_id': '1'
+    }, created_at='2025-07-30T19: 57: 39.366485+00: 00', parent_config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f7-1dd1-65c2-800b-e7312d9dba2c'
+        }
+    }, tasks=(), interrupts=()),
+ StateSnapshot(values={'messages': [HumanMessage(content='Hi there', additional_kwargs={}, response_metadata={}, id='85bf67d6-56cb-422f-8cda-b7c7d1fa7c8c'), AIMessage(content='Hello! How can I assist you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 10, 'prompt_tokens': 90, 'total_tokens': 100, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DOhIAwzV34hffL6GaACqJgQ944', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--85764765-9813-4c0c-8d36-f257b75a7d64-0', usage_metadata={'input_tokens': 90, 'output_tokens': 10, 'total_tokens': 100, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='My name is Mike', additional_kwargs={}, response_metadata={}, id='220154d4-1296-4692-b48d-f791378c064f'), AIMessage(content='Nice to meet you, Mike! How can I help you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 111, 'total_tokens': 126, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DTlKnTC3rtcyDYzr6weTtmmXXn', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--e53996bc-8eb9-49a6-a0d5-c0d83faed227-0', usage_metadata={'input_tokens': 111, 'output_tokens': 15, 'total_tokens': 126, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='What is my name?', additional_kwargs={}, response_metadata={}, id='92c2156c-1e06-4a01-8bb0-2ffbc515fcca'), AIMessage(content='Your name is Mike.', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 6, 'prompt_tokens': 138, 'total_tokens': 144, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DXH4Ww4RiPoMRQhkKb70fHgoiv', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--254d6224-1d06-41ad-a810-ad0576fee5a7-0', usage_metadata={'input_tokens': 138, 'output_tokens': 6, 'total_tokens': 144, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='Shout my name!@', additional_kwargs={}, response_metadata={}, id='ee7765b1-36b7-4008-9eb1-cf19492d5445'), AIMessage(content='', additional_kwargs={'tool_calls': [
+                    {'id': 'call_g7bfq5Z8zPsn8wVU3yCokir9', 'function': {'arguments': '{
+                                "__arg1": "MIKE!"
+                            }', 'name': 'send_push_notification'
+                        }, 'type': 'function'
+                    }
+                ], 'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 19, 'prompt_tokens': 157, 'total_tokens': 176, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DcdKwHk0OUtKTBaMTLdlzZetTr', 'service_tier': 'default', 'finish_reason': 'tool_calls', 'logprobs': None
+            }, id='run--a72b63e0-eb24-41ac-a500-8efa6d4ec098-0', tool_calls=[
+                {'name': 'send_push_notification', 'args': {'__arg1': 'MIKE!'
+                    }, 'id': 'call_g7bfq5Z8zPsn8wVU3yCokir9', 'type': 'tool_call'
+                }
+            ], usage_metadata={'input_tokens': 157, 'output_tokens': 19, 'total_tokens': 176, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), ToolMessage(content='null', name='send_push_notification', id='ca031144-7c05-45e2-a8ac-39163b9d08cc', tool_call_id='call_g7bfq5Z8zPsn8wVU3yCokir9')
+        ]
+    }, next=('chatbot',), config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f7-1dd1-65c2-800b-e7312d9dba2c'
+        }
+    }, metadata={'source': 'loop', 'writes': {'tools': {'messages': [ToolMessage(content='null', name='send_push_notification', id='ca031144-7c05-45e2-a8ac-39163b9d08cc', tool_call_id='call_g7bfq5Z8zPsn8wVU3yCokir9')
+                ]
+            }
+        }, 'step': 11, 'parents': {}, 'thread_id': '1'
+    }, created_at='2025-07-30T19: 57: 38.707398+00: 00', parent_config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f7-144f-6409-800a-b3df8422ad8e'
+        }
+    }, tasks=(PregelTask(id='2a3ee84b-91e6-ac6b-06a3-f7aeebce0dfe', name='chatbot', path=('__pregel_pull', 'chatbot'), error=None, interrupts=(), state=None, result={'messages': [AIMessage(content='MIKE! 🎉', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 6, 'prompt_tokens': 186, 'total_tokens': 192, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DeEGOW8m5drFJtALYeqPZM9C97', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--03dcfe68-4c14-4aa0-9140-4b5e489cf35f-0', usage_metadata={'input_tokens': 186, 'output_tokens': 6, 'total_tokens': 192, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            })
+        ]
+    }),), interrupts=()),
+ StateSnapshot(values={'messages': [HumanMessage(content='Hi there', additional_kwargs={}, response_metadata={}, id='85bf67d6-56cb-422f-8cda-b7c7d1fa7c8c'), AIMessage(content='Hello! How can I assist you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 10, 'prompt_tokens': 90, 'total_tokens': 100, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DOhIAwzV34hffL6GaACqJgQ944', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--85764765-9813-4c0c-8d36-f257b75a7d64-0', usage_metadata={'input_tokens': 90, 'output_tokens': 10, 'total_tokens': 100, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='My name is Mike', additional_kwargs={}, response_metadata={}, id='220154d4-1296-4692-b48d-f791378c064f'), AIMessage(content='Nice to meet you, Mike! How can I help you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 111, 'total_tokens': 126, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DTlKnTC3rtcyDYzr6weTtmmXXn', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--e53996bc-8eb9-49a6-a0d5-c0d83faed227-0', usage_metadata={'input_tokens': 111, 'output_tokens': 15, 'total_tokens': 126, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='What is my name?', additional_kwargs={}, response_metadata={}, id='92c2156c-1e06-4a01-8bb0-2ffbc515fcca'), AIMessage(content='Your name is Mike.', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 6, 'prompt_tokens': 138, 'total_tokens': 144, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DXH4Ww4RiPoMRQhkKb70fHgoiv', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--254d6224-1d06-41ad-a810-ad0576fee5a7-0', usage_metadata={'input_tokens': 138, 'output_tokens': 6, 'total_tokens': 144, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='Shout my name!@', additional_kwargs={}, response_metadata={}, id='ee7765b1-36b7-4008-9eb1-cf19492d5445'), AIMessage(content='', additional_kwargs={'tool_calls': [
+                    {'id': 'call_g7bfq5Z8zPsn8wVU3yCokir9', 'function': {'arguments': '{
+                                "__arg1": "MIKE!"
+                            }', 'name': 'send_push_notification'
+                        }, 'type': 'function'
+                    }
+                ], 'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 19, 'prompt_tokens': 157, 'total_tokens': 176, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DcdKwHk0OUtKTBaMTLdlzZetTr', 'service_tier': 'default', 'finish_reason': 'tool_calls', 'logprobs': None
+            }, id='run--a72b63e0-eb24-41ac-a500-8efa6d4ec098-0', tool_calls=[
+                {'name': 'send_push_notification', 'args': {'__arg1': 'MIKE!'
+                    }, 'id': 'call_g7bfq5Z8zPsn8wVU3yCokir9', 'type': 'tool_call'
+                }
+            ], usage_metadata={'input_tokens': 157, 'output_tokens': 19, 'total_tokens': 176, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            })
+        ]
+    }, next=('tools',), config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f7-144f-6409-800a-b3df8422ad8e'
+        }
+    }, metadata={'source': 'loop', 'writes': {'chatbot': {'messages': [AIMessage(content='', additional_kwargs={'tool_calls': [
+                            {'id': 'call_g7bfq5Z8zPsn8wVU3yCokir9', 'function': {'arguments': '{
+                                        "__arg1": "MIKE!"
+                                    }', 'name': 'send_push_notification'
+                                }, 'type': 'function'
+                            }
+                        ], 'refusal': None
+                    }, response_metadata={'token_usage': {'completion_tokens': 19, 'prompt_tokens': 157, 'total_tokens': 176, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                            }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                            }
+                        }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DcdKwHk0OUtKTBaMTLdlzZetTr', 'service_tier': 'default', 'finish_reason': 'tool_calls', 'logprobs': None
+                    }, id='run--a72b63e0-eb24-41ac-a500-8efa6d4ec098-0', tool_calls=[
+                        {'name': 'send_push_notification', 'args': {'__arg1': 'MIKE!'
+                            }, 'id': 'call_g7bfq5Z8zPsn8wVU3yCokir9', 'type': 'tool_call'
+                        }
+                    ], usage_metadata={'input_tokens': 157, 'output_tokens': 19, 'total_tokens': 176, 'input_token_details': {'audio': 0, 'cache_read': 0
+                        }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                        }
+                    })
+                ]
+            }
+        }, 'step': 10, 'parents': {}, 'thread_id': '1'
+    }, created_at='2025-07-30T19: 57: 37.710388+00: 00', parent_config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f7-0cab-6559-8009-3134b57c6fc4'
+        }
+    }, tasks=(PregelTask(id='3b808461-9cab-c730-501a-db4dc3757fed', name='tools', path=('__pregel_pull', 'tools'), error=None, interrupts=(), state=None, result={'messages': [ToolMessage(content='null', name='send_push_notification', id='ca031144-7c05-45e2-a8ac-39163b9d08cc', tool_call_id='call_g7bfq5Z8zPsn8wVU3yCokir9')
+        ]
+    }),), interrupts=()),
+ StateSnapshot(values={'messages': [HumanMessage(content='Hi there', additional_kwargs={}, response_metadata={}, id='85bf67d6-56cb-422f-8cda-b7c7d1fa7c8c'), AIMessage(content='Hello! How can I assist you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 10, 'prompt_tokens': 90, 'total_tokens': 100, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DOhIAwzV34hffL6GaACqJgQ944', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--85764765-9813-4c0c-8d36-f257b75a7d64-0', usage_metadata={'input_tokens': 90, 'output_tokens': 10, 'total_tokens': 100, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='My name is Mike', additional_kwargs={}, response_metadata={}, id='220154d4-1296-4692-b48d-f791378c064f'), AIMessage(content='Nice to meet you, Mike! How can I help you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 111, 'total_tokens': 126, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DTlKnTC3rtcyDYzr6weTtmmXXn', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--e53996bc-8eb9-49a6-a0d5-c0d83faed227-0', usage_metadata={'input_tokens': 111, 'output_tokens': 15, 'total_tokens': 126, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='What is my name?', additional_kwargs={}, response_metadata={}, id='92c2156c-1e06-4a01-8bb0-2ffbc515fcca'), AIMessage(content='Your name is Mike.', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 6, 'prompt_tokens': 138, 'total_tokens': 144, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DXH4Ww4RiPoMRQhkKb70fHgoiv', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--254d6224-1d06-41ad-a810-ad0576fee5a7-0', usage_metadata={'input_tokens': 138, 'output_tokens': 6, 'total_tokens': 144, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='Shout my name!@', additional_kwargs={}, response_metadata={}, id='ee7765b1-36b7-4008-9eb1-cf19492d5445')
+        ]
+    }, next=('chatbot',), config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f7-0cab-6559-8009-3134b57c6fc4'
+        }
+    }, metadata={'source': 'loop', 'writes': None, 'step': 9, 'parents': {}, 'thread_id': '1'
+    }, created_at='2025-07-30T19: 57: 36.909244+00: 00', parent_config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f7-0ca8-6e4f-8008-99ad339971b1'
+        }
+    }, tasks=(PregelTask(id='36fcbe4a-7a0a-45a7-a56f-e5a8926d6119', name='chatbot', path=('__pregel_pull', 'chatbot'), error=None, interrupts=(), state=None, result={'messages': [AIMessage(content='', additional_kwargs={'tool_calls': [
+                    {'id': 'call_g7bfq5Z8zPsn8wVU3yCokir9', 'function': {'arguments': '{
+                                "__arg1": "MIKE!"
+                            }', 'name': 'send_push_notification'
+                        }, 'type': 'function'
+                    }
+                ], 'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 19, 'prompt_tokens': 157, 'total_tokens': 176, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DcdKwHk0OUtKTBaMTLdlzZetTr', 'service_tier': 'default', 'finish_reason': 'tool_calls', 'logprobs': None
+            }, id='run--a72b63e0-eb24-41ac-a500-8efa6d4ec098-0', tool_calls=[
+                {'name': 'send_push_notification', 'args': {'__arg1': 'MIKE!'
+                    }, 'id': 'call_g7bfq5Z8zPsn8wVU3yCokir9', 'type': 'tool_call'
+                }
+            ], usage_metadata={'input_tokens': 157, 'output_tokens': 19, 'total_tokens': 176, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            })
+        ]
+    }),), interrupts=()),
+ StateSnapshot(values={'messages': [HumanMessage(content='Hi there', additional_kwargs={}, response_metadata={}, id='85bf67d6-56cb-422f-8cda-b7c7d1fa7c8c'), AIMessage(content='Hello! How can I assist you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 10, 'prompt_tokens': 90, 'total_tokens': 100, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DOhIAwzV34hffL6GaACqJgQ944', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--85764765-9813-4c0c-8d36-f257b75a7d64-0', usage_metadata={'input_tokens': 90, 'output_tokens': 10, 'total_tokens': 100, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='My name is Mike', additional_kwargs={}, response_metadata={}, id='220154d4-1296-4692-b48d-f791378c064f'), AIMessage(content='Nice to meet you, Mike! How can I help you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 111, 'total_tokens': 126, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DTlKnTC3rtcyDYzr6weTtmmXXn', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--e53996bc-8eb9-49a6-a0d5-c0d83faed227-0', usage_metadata={'input_tokens': 111, 'output_tokens': 15, 'total_tokens': 126, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='What is my name?', additional_kwargs={}, response_metadata={}, id='92c2156c-1e06-4a01-8bb0-2ffbc515fcca'), AIMessage(content='Your name is Mike.', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 6, 'prompt_tokens': 138, 'total_tokens': 144, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DXH4Ww4RiPoMRQhkKb70fHgoiv', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--254d6224-1d06-41ad-a810-ad0576fee5a7-0', usage_metadata={'input_tokens': 138, 'output_tokens': 6, 'total_tokens': 144, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            })
+        ]
+    }, next=('__start__',), config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f7-0ca8-6e4f-8008-99ad339971b1'
+        }
+    }, metadata={'source': 'input', 'writes': {'__start__': {'messages': [
+                    {'role': 'user', 'content': 'Shout my name!@'
+                    }
+                ]
+            }
+        }, 'step': 8, 'parents': {}, 'thread_id': '1'
+    }, created_at='2025-07-30T19: 57: 36.908244+00: 00', parent_config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-e5a5-65b4-8007-eea7ebe27d73'
+        }
+    }, tasks=(PregelTask(id='a06d6588-6964-70c8-c2c8-5148e054d2e5', name='__start__', path=('__pregel_pull', '__start__'), error=None, interrupts=(), state=None, result={'messages': [
+            {'role': 'user', 'content': 'Shout my name!@'
+            }
+        ]
+    }),), interrupts=()),
+ StateSnapshot(values={'messages': [HumanMessage(content='Hi there', additional_kwargs={}, response_metadata={}, id='85bf67d6-56cb-422f-8cda-b7c7d1fa7c8c'), AIMessage(content='Hello! How can I assist you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 10, 'prompt_tokens': 90, 'total_tokens': 100, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DOhIAwzV34hffL6GaACqJgQ944', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--85764765-9813-4c0c-8d36-f257b75a7d64-0', usage_metadata={'input_tokens': 90, 'output_tokens': 10, 'total_tokens': 100, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='My name is Mike', additional_kwargs={}, response_metadata={}, id='220154d4-1296-4692-b48d-f791378c064f'), AIMessage(content='Nice to meet you, Mike! How can I help you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 111, 'total_tokens': 126, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DTlKnTC3rtcyDYzr6weTtmmXXn', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--e53996bc-8eb9-49a6-a0d5-c0d83faed227-0', usage_metadata={'input_tokens': 111, 'output_tokens': 15, 'total_tokens': 126, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='What is my name?', additional_kwargs={}, response_metadata={}, id='92c2156c-1e06-4a01-8bb0-2ffbc515fcca'), AIMessage(content='Your name is Mike.', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 6, 'prompt_tokens': 138, 'total_tokens': 144, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DXH4Ww4RiPoMRQhkKb70fHgoiv', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--254d6224-1d06-41ad-a810-ad0576fee5a7-0', usage_metadata={'input_tokens': 138, 'output_tokens': 6, 'total_tokens': 144, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            })
+        ]
+    }, next=(), config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-e5a5-65b4-8007-eea7ebe27d73'
+        }
+    }, metadata={'source': 'loop', 'writes': {'chatbot': {'messages': [AIMessage(content='Your name is Mike.', additional_kwargs={'refusal': None
+                    }, response_metadata={'token_usage': {'completion_tokens': 6, 'prompt_tokens': 138, 'total_tokens': 144, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                            }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                            }
+                        }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DXH4Ww4RiPoMRQhkKb70fHgoiv', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+                    }, id='run--254d6224-1d06-41ad-a810-ad0576fee5a7-0', usage_metadata={'input_tokens': 138, 'output_tokens': 6, 'total_tokens': 144, 'input_token_details': {'audio': 0, 'cache_read': 0
+                        }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                        }
+                    })
+                ]
+            }
+        }, 'step': 7, 'parents': {}, 'thread_id': '1'
+    }, created_at='2025-07-30T19: 57: 32.817349+00: 00', parent_config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-e016-65bc-8006-f787ac5a47b1'
+        }
+    }, tasks=(), interrupts=()),
+ StateSnapshot(values={'messages': [HumanMessage(content='Hi there', additional_kwargs={}, response_metadata={}, id='85bf67d6-56cb-422f-8cda-b7c7d1fa7c8c'), AIMessage(content='Hello! How can I assist you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 10, 'prompt_tokens': 90, 'total_tokens': 100, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DOhIAwzV34hffL6GaACqJgQ944', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--85764765-9813-4c0c-8d36-f257b75a7d64-0', usage_metadata={'input_tokens': 90, 'output_tokens': 10, 'total_tokens': 100, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='My name is Mike', additional_kwargs={}, response_metadata={}, id='220154d4-1296-4692-b48d-f791378c064f'), AIMessage(content='Nice to meet you, Mike! How can I help you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 111, 'total_tokens': 126, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DTlKnTC3rtcyDYzr6weTtmmXXn', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--e53996bc-8eb9-49a6-a0d5-c0d83faed227-0', usage_metadata={'input_tokens': 111, 'output_tokens': 15, 'total_tokens': 126, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='What is my name?', additional_kwargs={}, response_metadata={}, id='92c2156c-1e06-4a01-8bb0-2ffbc515fcca')
+        ]
+    }, next=('chatbot',), config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-e016-65bc-8006-f787ac5a47b1'
+        }
+    }, metadata={'source': 'loop', 'writes': None, 'step': 6, 'parents': {}, 'thread_id': '1'
+    }, created_at='2025-07-30T19: 57: 32.234489+00: 00', parent_config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-e013-6eaf-8005-72c123f7ec64'
+        }
+    }, tasks=(PregelTask(id='2f8c5f49-e1ed-375c-38ff-58ceed013a63', name='chatbot', path=('__pregel_pull', 'chatbot'), error=None, interrupts=(), state=None, result={'messages': [AIMessage(content='Your name is Mike.', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 6, 'prompt_tokens': 138, 'total_tokens': 144, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DXH4Ww4RiPoMRQhkKb70fHgoiv', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--254d6224-1d06-41ad-a810-ad0576fee5a7-0', usage_metadata={'input_tokens': 138, 'output_tokens': 6, 'total_tokens': 144, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            })
+        ]
+    }),), interrupts=()),
+ StateSnapshot(values={'messages': [HumanMessage(content='Hi there', additional_kwargs={}, response_metadata={}, id='85bf67d6-56cb-422f-8cda-b7c7d1fa7c8c'), AIMessage(content='Hello! How can I assist you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 10, 'prompt_tokens': 90, 'total_tokens': 100, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DOhIAwzV34hffL6GaACqJgQ944', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--85764765-9813-4c0c-8d36-f257b75a7d64-0', usage_metadata={'input_tokens': 90, 'output_tokens': 10, 'total_tokens': 100, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='My name is Mike', additional_kwargs={}, response_metadata={}, id='220154d4-1296-4692-b48d-f791378c064f'), AIMessage(content='Nice to meet you, Mike! How can I help you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 111, 'total_tokens': 126, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DTlKnTC3rtcyDYzr6weTtmmXXn', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--e53996bc-8eb9-49a6-a0d5-c0d83faed227-0', usage_metadata={'input_tokens': 111, 'output_tokens': 15, 'total_tokens': 126, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            })
+        ]
+    }, next=('__start__',), config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-e013-6eaf-8005-72c123f7ec64'
+        }
+    }, metadata={'source': 'input', 'writes': {'__start__': {'messages': [
+                    {'role': 'user', 'content': 'What is my name?'
+                    }
+                ]
+            }
+        }, 'step': 5, 'parents': {}, 'thread_id': '1'
+    }, created_at='2025-07-30T19: 57: 32.233489+00: 00', parent_config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-bcb2-64f5-8004-0d50b5eac417'
+        }
+    }, tasks=(PregelTask(id='fd3ab3c8-279e-e9d6-998b-141667bd4cd0', name='__start__', path=('__pregel_pull', '__start__'), error=None, interrupts=(), state=None, result={'messages': [
+            {'role': 'user', 'content': 'What is my name?'
+            }
+        ]
+    }),), interrupts=()),
+ StateSnapshot(values={'messages': [HumanMessage(content='Hi there', additional_kwargs={}, response_metadata={}, id='85bf67d6-56cb-422f-8cda-b7c7d1fa7c8c'), AIMessage(content='Hello! How can I assist you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 10, 'prompt_tokens': 90, 'total_tokens': 100, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DOhIAwzV34hffL6GaACqJgQ944', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--85764765-9813-4c0c-8d36-f257b75a7d64-0', usage_metadata={'input_tokens': 90, 'output_tokens': 10, 'total_tokens': 100, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='My name is Mike', additional_kwargs={}, response_metadata={}, id='220154d4-1296-4692-b48d-f791378c064f'), AIMessage(content='Nice to meet you, Mike! How can I help you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 111, 'total_tokens': 126, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DTlKnTC3rtcyDYzr6weTtmmXXn', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--e53996bc-8eb9-49a6-a0d5-c0d83faed227-0', usage_metadata={'input_tokens': 111, 'output_tokens': 15, 'total_tokens': 126, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            })
+        ]
+    }, next=(), config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-bcb2-64f5-8004-0d50b5eac417'
+        }
+    }, metadata={'source': 'loop', 'writes': {'chatbot': {'messages': [AIMessage(content='Nice to meet you, Mike! How can I help you today?', additional_kwargs={'refusal': None
+                    }, response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 111, 'total_tokens': 126, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                            }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                            }
+                        }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DTlKnTC3rtcyDYzr6weTtmmXXn', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+                    }, id='run--e53996bc-8eb9-49a6-a0d5-c0d83faed227-0', usage_metadata={'input_tokens': 111, 'output_tokens': 15, 'total_tokens': 126, 'input_token_details': {'audio': 0, 'cache_read': 0
+                        }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                        }
+                    })
+                ]
+            }
+        }, 'step': 4, 'parents': {}, 'thread_id': '1'
+    }, created_at='2025-07-30T19: 57: 28.523493+00: 00', parent_config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-a66c-6409-8003-13a828fcfce8'
+        }
+    }, tasks=(), interrupts=()),
+ StateSnapshot(values={'messages': [HumanMessage(content='Hi there', additional_kwargs={}, response_metadata={}, id='85bf67d6-56cb-422f-8cda-b7c7d1fa7c8c'), AIMessage(content='Hello! How can I assist you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 10, 'prompt_tokens': 90, 'total_tokens': 100, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DOhIAwzV34hffL6GaACqJgQ944', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--85764765-9813-4c0c-8d36-f257b75a7d64-0', usage_metadata={'input_tokens': 90, 'output_tokens': 10, 'total_tokens': 100, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            }), HumanMessage(content='My name is Mike', additional_kwargs={}, response_metadata={}, id='220154d4-1296-4692-b48d-f791378c064f')
+        ]
+    }, next=('chatbot',), config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-a66c-6409-8003-13a828fcfce8'
+        }
+    }, metadata={'source': 'loop', 'writes': None, 'step': 3, 'parents': {}, 'thread_id': '1'
+    }, created_at='2025-07-30T19: 57: 26.187930+00: 00', parent_config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-a669-6d04-8002-1272ad4f8b1f'
+        }
+    }, tasks=(PregelTask(id='809456d7-a504-377d-c3fd-30e5977d5b8c', name='chatbot', path=('__pregel_pull', 'chatbot'), error=None, interrupts=(), state=None, result={'messages': [AIMessage(content='Nice to meet you, Mike! How can I help you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 111, 'total_tokens': 126, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DTlKnTC3rtcyDYzr6weTtmmXXn', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--e53996bc-8eb9-49a6-a0d5-c0d83faed227-0', usage_metadata={'input_tokens': 111, 'output_tokens': 15, 'total_tokens': 126, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            })
+        ]
+    }),), interrupts=()),
+ StateSnapshot(values={'messages': [HumanMessage(content='Hi there', additional_kwargs={}, response_metadata={}, id='85bf67d6-56cb-422f-8cda-b7c7d1fa7c8c'), AIMessage(content='Hello! How can I assist you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 10, 'prompt_tokens': 90, 'total_tokens': 100, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DOhIAwzV34hffL6GaACqJgQ944', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--85764765-9813-4c0c-8d36-f257b75a7d64-0', usage_metadata={'input_tokens': 90, 'output_tokens': 10, 'total_tokens': 100, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            })
+        ]
+    }, next=('__start__',), config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-a669-6d04-8002-1272ad4f8b1f'
+        }
+    }, metadata={'source': 'input', 'writes': {'__start__': {'messages': [
+                    {'role': 'user', 'content': 'My name is Mike'
+                    }
+                ]
+            }
+        }, 'step': 2, 'parents': {}, 'thread_id': '1'
+    }, created_at='2025-07-30T19: 57: 26.186931+00: 00', parent_config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-8aef-62ec-8001-afcf6286733f'
+        }
+    }, tasks=(PregelTask(id='c697cc99-fd7f-9f29-2fc8-7f057f2ceeaa', name='__start__', path=('__pregel_pull', '__start__'), error=None, interrupts=(), state=None, result={'messages': [
+            {'role': 'user', 'content': 'My name is Mike'
+            }
+        ]
+    }),), interrupts=()),
+ StateSnapshot(values={'messages': [HumanMessage(content='Hi there', additional_kwargs={}, response_metadata={}, id='85bf67d6-56cb-422f-8cda-b7c7d1fa7c8c'), AIMessage(content='Hello! How can I assist you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 10, 'prompt_tokens': 90, 'total_tokens': 100, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DOhIAwzV34hffL6GaACqJgQ944', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--85764765-9813-4c0c-8d36-f257b75a7d64-0', usage_metadata={'input_tokens': 90, 'output_tokens': 10, 'total_tokens': 100, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            })
+        ]
+    }, next=(), config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-8aef-62ec-8001-afcf6286733f'
+        }
+    }, metadata={'source': 'loop', 'writes': {'chatbot': {'messages': [AIMessage(content='Hello! How can I assist you today?', additional_kwargs={'refusal': None
+                    }, response_metadata={'token_usage': {'completion_tokens': 10, 'prompt_tokens': 90, 'total_tokens': 100, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                            }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                            }
+                        }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DOhIAwzV34hffL6GaACqJgQ944', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+                    }, id='run--85764765-9813-4c0c-8d36-f257b75a7d64-0', usage_metadata={'input_tokens': 90, 'output_tokens': 10, 'total_tokens': 100, 'input_token_details': {'audio': 0, 'cache_read': 0
+                        }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                        }
+                    })
+                ]
+            }
+        }, 'step': 1, 'parents': {}, 'thread_id': '1'
+    }, created_at='2025-07-30T19: 57: 23.305546+00: 00', parent_config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-7d68-6805-8000-51c2314c7762'
+        }
+    }, tasks=(), interrupts=()),
+ StateSnapshot(values={'messages': [HumanMessage(content='Hi there', additional_kwargs={}, response_metadata={}, id='85bf67d6-56cb-422f-8cda-b7c7d1fa7c8c')
+        ]
+    }, next=('chatbot',), config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-7d68-6805-8000-51c2314c7762'
+        }
+    }, metadata={'source': 'loop', 'writes': None, 'step': 0, 'parents': {}, 'thread_id': '1'
+    }, created_at='2025-07-30T19: 57: 21.887232+00: 00', parent_config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-7d66-60d0-bfff-951c611ed25b'
+        }
+    }, tasks=(PregelTask(id='326cc7ef-5d3b-8484-c201-71aa93d1ed2b', name='chatbot', path=('__pregel_pull', 'chatbot'), error=None, interrupts=(), state=None, result={'messages': [AIMessage(content='Hello! How can I assist you today?', additional_kwargs={'refusal': None
+            }, response_metadata={'token_usage': {'completion_tokens': 10, 'prompt_tokens': 90, 'total_tokens': 100, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                    }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                    }
+                }, 'model_name': 'gpt-4o-mini-2024-07-18', 'system_fingerprint': 'fp_34a54ae93c', 'id': 'chatcmpl-Bz7DOhIAwzV34hffL6GaACqJgQ944', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+            }, id='run--85764765-9813-4c0c-8d36-f257b75a7d64-0', usage_metadata={'input_tokens': 90, 'output_tokens': 10, 'total_tokens': 100, 'input_token_details': {'audio': 0, 'cache_read': 0
+                }, 'output_token_details': {'audio': 0, 'reasoning': 0
+                }
+            })
+        ]
+    }),), interrupts=()),
+ StateSnapshot(values={'messages': []
+    }, next=('__start__',), config={'configurable': {'thread_id': '1', 'checkpoint_ns': '', 'checkpoint_id': '1f06d7f6-7d66-60d0-bfff-951c611ed25b'
+        }
+    }, metadata={'source': 'input', 'writes': {'__start__': {'messages': [
+                    {'role': 'user', 'content': 'Hi there'
+                    }
+                ]
+            }
+        }, 'step': -1, 'parents': {}, 'thread_id': '1'
+    }, created_at='2025-07-30T19: 57: 21.886228+00: 00', parent_config=None, tasks=(PregelTask(id='a24cb2a5-30b9-480a-348e-9ea68c57d995', name='__start__', path=('__pregel_pull', '__start__'), error=None, interrupts=(), state=None, result={'messages': [
+            {'role': 'user', 'content': 'Hi there'
+            }
+        ]
+    }),), interrupts=())
+]

@@ -39,6 +39,7 @@ def run():
 
     # Create and run the crew
     result = EngineeringTeam().crew().kickoff(inputs=inputs)
+    print(result.raw)
 
 
 if __name__ == "__main__":

@@ -29,7 +29,6 @@ class TrendingCompanyResearchList(BaseModel):
     """ A list of detailed research on all the companies """
     research_list: List[TrendingCompanyResearch] = Field(description="Comprehensive research on all trending companies")
 
-
 @CrewBase
 class StockPicker():
     """StockPicker crew"""
@@ -39,31 +38,37 @@ class StockPicker():
 
     @agent
     def trending_company_finder(self) -> Agent:
-        return Agent(config=self.agents_config['trending_company_finder'],
-                     tools=[SerperDevTool()], memory=True)
+        return Agent(
+            config=self.agents_config['trending_company_finder'], tools=[SerperDevTool()], memory=True,
+            verbose=True
+        )
     
     @agent
     def financial_researcher(self) -> Agent:
-        return Agent(config=self.agents_config['financial_researcher'], 
-                     tools=[SerperDevTool()])
+        return Agent(
+            config=self.agents_config['financial_researcher'], tools=[SerperDevTool()],
+            verbose=True
+        )
 
     @agent
     def stock_picker(self) -> Agent:
-        return Agent(config=self.agents_config['stock_picker'], 
-                     tools=[PushNotificationTool()], memory=True)
+        return Agent(
+            config=self.agents_config['stock_picker'], tools=[PushNotificationTool()], memory=True,
+            verbose=True
+        )
     
     @task
     def find_trending_companies(self) -> Task:
         return Task(
             config=self.tasks_config['find_trending_companies'],
-            output_pydantic=TrendingCompanyList,
+            output_pydantic=TrendingCompanyList
         )
 
     @task
     def research_trending_companies(self) -> Task:
         return Task(
             config=self.tasks_config['research_trending_companies'],
-            output_pydantic=TrendingCompanyResearchList,
+            output_pydantic=TrendingCompanyResearchList
         )
 
     @task
@@ -71,9 +76,6 @@ class StockPicker():
         return Task(
             config=self.tasks_config['pick_best_company'],
         )
-    
-
-
 
     @crew
     def crew(self) -> Crew:
