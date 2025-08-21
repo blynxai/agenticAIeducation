@@ -10,6 +10,7 @@ dependencies = [
     "autogen-ext[grpc,mcp,ollama,openai]>=0.4.9.2",
     "bs4>=0.0.2",
     "ddgs>=9.5.2",
+    "galileo>=1.15.0",
     "google-genai>=1.14.0",
     "gradio>=5.22.0",
     "httpx>=0.28.1",
@@ -45,6 +46,8 @@ dependencies = [
     "strands-agents-builder>=0.0.1",
     "strands-agents-tools>=0.2.3",
     "wikipedia>=1.4.0",
+    "galileo (>=1.12.0,<2.0.0)",
+    "awslabs-aws-documentation-mcp-server>=1.1.4",
 ]
 
 [dependency-groups]

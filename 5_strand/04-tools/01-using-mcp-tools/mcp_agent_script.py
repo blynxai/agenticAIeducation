@@ -13,7 +13,7 @@ import sys
 import subprocess
 from pathlib import Path
 
-
+# Just venv path manipulation to ensure this runs on both Windows and MacOS
 def get_venv_path():
     """Detect virtual environment path from various sources."""
     # Check VIRTUAL_ENV environment variable first
@@ -31,7 +31,7 @@ def get_venv_path():
     
     return scripts_path
 
-
+# Just venv path manipulation to ensure this runs on both Windows and MacOS
 def get_mcp_executable():
     """Get the platform-specific MCP server executable path."""
     venv_scripts_path = get_venv_path()
@@ -43,6 +43,33 @@ def get_mcp_executable():
         executable_name = "awslabs.aws-documentation-mcp-server"
     
     return venv_scripts_path / executable_name
+
+
+def install_mcp_server():
+    """Install the MCP server using uv or pip as fallback."""
+    print("Installing awslabs.aws-documentation-mcp-server...")
+    
+    # Try uv first
+    try:
+        subprocess.run([
+            "uv", "add", 
+            "awslabs.aws-documentation-mcp-server"
+        ], check=True, capture_output=True)
+        print("✓ Installed using uv")
+        return True
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        # Fallback to pip if uv fails or is not available
+        print("uv failed or not available, falling back to pip...")
+        try:
+            subprocess.run([
+                sys.executable, "-m", "pip", "install", 
+                "awslabs.aws-documentation-mcp-server"
+            ], check=True, capture_output=True)
+            print("✓ Installed using pip")
+            return True
+        except subprocess.CalledProcessError as e:
+            print(f"✗ pip installation failed: {e}")
+            return False
 
 
 def create_mcp_client():
@@ -71,14 +98,12 @@ def create_mcp_client():
     except Exception as e:
         print(f"✗ Executable method failed: {e}")
     
-    # Method 2: Try pip install and then use executable
+    # Method 2: Try installing and then use executable
     print("Method 2: Trying to install MCP server...")
     try:
-        print("Installing awslabs.aws-documentation-mcp-server...")
-        subprocess.run([
-            sys.executable, "-m", "pip", "install", 
-            "awslabs.aws-documentation-mcp-server"
-        ], check=True, capture_output=True)
+        # Use the dedicated installation function
+        if not install_mcp_server():
+            raise RuntimeError("Failed to install MCP server")
         
         mcp_exe = get_mcp_executable()
         if mcp_exe.exists():
