@@ -30,22 +30,29 @@ It's important to appreciate the difference between your Windows home directory,
 ### Part 2: Install uv and repo
 
 1. In a WSL window (i.e. a Powershell after you've typed 'wsl') - we will follow the linux instructions here: https://docs.astral.sh/uv/getting-started/installation/ and run `curl -LsSf https://astral.sh/uv/install.sh | sh`
-2. After that completes, you need to type `exit` to leave WSL and return to the Powershell and then type `wsl` to return to Linux, in order that changes to PATH are picked up
-3. Now type `cd` to go to your Linux home directory. Check you're there with `pwd` and `ls`
-4. Now create a projects directory with `mkdir projects` then `cd projects` to go into it
-5. And, from within your new projects directory, clone the repo with `git clone https://github.com/blynxai/agenticaieducation.git`
-6. Now go into your new agents directory, your Project Root Directory, with `cd agents`
-7. And now run the all-powerful `uv sync`
+2. After that completes, you need to type `exit` to leave WSL and restart your PC
+3. Return to the Powershell and then type `wsl` to return to Linux, in order that changes to PATH are picked up
+4. Now type `cd` to go to your Linux home directory. Check you're there with `pwd` and `ls`
+5. Now create a projects directory with `mkdir projects` then `cd projects` to go into it
+6. And, from within your new projects directory, clone the repo with `git clone https://github.com/blynxai/agenticaieducation.git`
+7. Now go into your new agents directory, your Project Root Directory, with `cd agenticAIeducation`
+8. And now run the all-powerful `uv sync`
 
-At this point, I experienced an unpleasant memory error. I believe it's related to my setup, and you shouldn't hit it. But if you do, please let me know - I have a fix!
+### Part 3: Install Node if you haven't done so yet (this is required for Playwright)
+1. In your WSL environment open a terminal and install nvm: `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash`
+2. Close and repoen Cursir and restart your WSL enviornment in the rocess
+3. Activate your virtual environment with `.venv\Scripts\Avtivate.ps1`
+4. Intall your latest version of Node with `nvm install --lts`
+5. Confirm the installation by typing `node -v`
 
-### Part 3: Configure Cursor running in your PC environment
+### Part 4: Configure Cursor running in your PC environment
 
 1. Open Cursor, the usual way, on your PC
 2. Bring up the Extensions panel (View menu >> Extensions or Ctrl+Shift+X), search for WSL, see WSL by Anysphere (the makers of Cursor) and Install it
 3. Now press Ctrl+Shift+P and search for Remote-WSL: New Window and select it to Open a new window configured for WSL
 4. Select Open Project (then get a coffee), and navigate to your new "agents" project root directory in Linux, and then Open or Select Folder
 5. Bring up the Extensions panel again (Ctrl+Shift+X) and install these Extensions in your WSL if not already installed: Python (ms-python), and Jupyter (microsoft), clicking the "Install in WSL-Ubuntu" button
+6. Restart your cursor and follow the steps above to return to your WSL environment
 
 ### And you should be ready to roll!
 
